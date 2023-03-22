@@ -1,21 +1,5 @@
 //Animations Starhaven.ai
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>;
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>;
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>;
-
-<script src="https://cdn.jsdelivr.net/npm/@finsweet/3dglobes@1/OrbitControls.min.js"></script>;
-
-<script src="https://cdn.jsdelivr.net/npm/@finsweet/3dglobes@1/FsGlobe.min.js"></script>;
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/CustomEase.min.js"></script>;
-
-<script src="https://uploads-ssl.webflow.com/63e7d7711a7c20bd4fdc5e51/63ea44dec1046d1e2ef592e6_scrambletext.txt"></script>;
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>;
-
 gsap.registerPlugin(ScrollTrigger);
 
 $('.section_key-visual').each(function () {
