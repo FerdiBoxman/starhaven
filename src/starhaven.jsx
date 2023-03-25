@@ -21,13 +21,11 @@ $('.section_key-visual').each(function () {
       width: '60em',
       height: '40em',
       borderRadius: '1em',
-      duration: 1,
     },
     {
       width: '100vw',
       height: '100vh',
       borderRadius: '1em',
-      duration: 1,
     }
   );
 });
