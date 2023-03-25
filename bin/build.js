@@ -7,7 +7,7 @@ const BUILD_DIRECTORY = 'dist';
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const ENTRY_POINTS = ['src/index.ts', 'src/starhaven-gsap.jsx'];
+const ENTRY_POINTS = ['src/index.ts', 'src/starhaven-gsapv1.jsx'];
 
 // Config dev serving
 const LIVE_RELOAD = !PRODUCTION;
