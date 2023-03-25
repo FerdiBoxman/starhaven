@@ -20,13 +20,11 @@ $('.section_key-visual').each(function () {
     {
       width: '60em',
       height: '40em',
-      borderRadius: '1em',
     },
     {
       width: '100vw',
       height: '100vh',
       borderRadius: '0em',
-      overflow: visible,
     }
   );
 });
