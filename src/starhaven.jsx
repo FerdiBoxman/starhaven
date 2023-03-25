@@ -24,7 +24,7 @@ $('.section_key-visual').each(function () {
     {
       width: '100vw',
       height: '100vh',
-      borderRadius: '0em',
+      borderRadius: '0%',
     }
   );
 });
