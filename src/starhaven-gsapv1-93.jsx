@@ -1,7 +1,5 @@
 //Animations Starhaven.ai0
 
-
-
   gsap.registerPlugin(ScrollTrigger);
 
   $(".section_key-visual").each(function () {
@@ -128,7 +126,7 @@ $(".section_header").each(function () {
 
 $(".section_intro").each(function () {
   let triggerElement = $(this);
-  let targetElements = $(".intro_left-grid, .intro_grid-top-right-first, .intro_right-grid-bottom");
+  //let targetElements = $(".intro_left-grid, .intro_grid-top-right-first, .intro_right-grid-bottom");
 
   let introTextElements = $("[text-animation='opacity']", this);
 
@@ -143,19 +141,19 @@ $(".section_intro").each(function () {
     },
   });
 
-  tl.fromTo(
-    targetElements,
-    {
-      "border-right-color": "black",
-      "border-top-color": "black",
-    },
-    {
-      "border-right-color": "#302e2e",
-      "border-top-color": "#302e2e",
-      duration: 1,
-      ease: "power2.inOut",
-    }
-  );
+  // tl.fromTo(
+  //   targetElements,
+  //   {
+  //     "border-right-color": "black",
+  //     "border-top-color": "black",
+  //   },
+  //   {
+  //     "border-right-color": "#302e2e",
+  //     "border-top-color": "#302e2e",
+  //     duration: 1,
+  //     ease: "power2.inOut",
+  //   }
+  // );
 
   tl.fromTo(
     introTextElements,
