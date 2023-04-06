@@ -1,5 +1,7 @@
 //Animations Starhaven.ai0
 
+
+(function() {
 gsap.registerPlugin(ScrollTrigger);
 
 $('.section_key-visual').each(function () {
@@ -331,9 +333,86 @@ reverseTl.to(
   0.05
 );
 
+})();
+
 //works from here
 
+(function() {
 
+$(".section_key-visual").each(function () {
+  let triggerElement = $(this);
+  let targetElements = $(".key-visual_left-grid, .key-visual_right-grid");
+  let imageElement = $(".key-visual_sticky-image");
+  let introTextElements = $("[key-visual-text='opacity']", this);
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      start: "top top-=70%",
+      end: "center center+=15%",
+      scrub: 1
+    }
+  });
+
+  tl.fromTo(
+    targetElements,
+    {
+      opacity: 0,
+      "border-right-color": "black",
+      "border-top-color": "black"
+    },
+    {
+      opacity: 1,
+      "border-right-color": "#302e2e",
+      "border-top-color": "#302e2e",
+      ease: "power2.easeIn"
+    }
+  );
+
+  tl.fromTo(
+    introTextElements,
+    {
+      opacity: 0,
+      y: 30
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 4,
+      ease: "power2.easeIn"
+    }
+  );
+
+  let reverseTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      start: "center center-=15%",
+      end: "bottom bottom-=15%",
+      scrub: 1,
+      ease: "power2.easeOut",
+      reverse: true
+    }
+  });
+
+  reverseTl.add([
+    gsap.to(targetElements, {
+      opacity: 0,
+      "border-right-color": "black",
+      "border-top-color": "black",
+      duration: 1
+    }),
+    gsap.to(introTextElements, {
+      opacity: 0,
+      duration: 1
+    }),
+    gsap.to(imageElement, {
+      opacity: 0,
+      ease: "power1.inOut",
+      duration: 1,
+      delay: 0.5
+    })
+  ]);
+});
 
 function scrambleText(
   elementSelector,
@@ -824,3 +903,5 @@ $(".section_cta").each(function () {
     }
   );
 });
+
+})();
