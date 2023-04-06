@@ -281,7 +281,6 @@ tl.fromTo(
     duration: 1,
     ease: 'power2.inOut',
   },
-  0
 );
 
 let reverseTl = gsap.timeline({
