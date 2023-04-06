@@ -2,31 +2,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-$('.section_key-visual').each(function () {
-  let triggerElement = $(this);
-  let targetElement = $('.key-visual_sticky-element');
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: triggerElement,
-
-      start: 'top top',
-      end: 'center center',
-      scrub: 1,
-    },
-  });
-  tl.fromTo(
-    targetElement,
-    {
-      width: '60em',
-      height: '40em',
-    },
-    {
-      width: '100vw',
-      height: '100vh',
-    }
-  );
-});
 
 function setTrackHeights() {
   $('.alignment-cycle_height').each(function () {
