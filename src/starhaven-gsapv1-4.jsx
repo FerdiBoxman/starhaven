@@ -2,8 +2,6 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 function setTrackHeights() {
   $('.alignment-cycle_height').each(function () {
     let trackWidth = $(this).find('.track').outerWidth();
