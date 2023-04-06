@@ -124,82 +124,83 @@ $(".section_header").each(function () {
 
 //Section_intro
 
-$(".section_intro").each(function () {
-  let triggerElement = $(this);
-  //let targetElements = $(".intro_left-grid, .intro_grid-top-right-first, .intro_right-grid-bottom");
+// $(".section_intro").each(function () {
+//   let triggerElement = $(this);
+//   let targetElements = $(".intro_left-grid, .intro_grid-top-right-first, .intro_right-grid-bottom");
 
-  let introTextElements = $("[text-animation='opacity']", this);
+//   let introTextElements = $("[text-animation='opacity']", this);
 
-  let introImageElement = $(".intro_grid-image", this);
+//   let introImageElement = $(".intro_grid-image", this);
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: triggerElement,
-      start: "top top",
-      end: "top+=5%",
-      scrub: 1,
-    },
-  });
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: triggerElement,
+//       start: "top top",
+//       end: "top+=5%",
+//       scrub: 1,
+//     },
+//   });
 
-  // tl.fromTo(
-  //   targetElements,
-  //   {
-  //     "border-right-color": "black",
-  //     "border-top-color": "black",
-  //   },
-  //   {
-  //     "border-right-color": "#302e2e",
-  //     "border-top-color": "#302e2e",
-  //     duration: 1,
-  //     ease: "power2.inOut",
-  //   }
-  // );
+//   tl.fromTo(
+//     targetElements,
+//     {
+//       "border-right-color": "black",
+//       "border-top-color": "black",
+//     },
+//     {
+//       "border-right-color": "#302e2e",
+//       "border-top-color": "#302e2e",
+//       duration: 1,
+//       ease: "power2.inOut",
+//     }
+//   );
 
-  tl.fromTo(
-    introTextElements,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-    },
-    1
-  );
+//   tl.fromTo(
+//     introTextElements,
+//     {
+//       opacity: 0,
+//     },
+//     {
+//       opacity: 1,
+//       duration: 1,
+//       ease: "power2.inOut",
+//     },
+//     1
+//   );
 
-  let introImageTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: triggerElement,
-      start: "top top",
-      end: "top+=5%",
-      scrub: 1,
-    },
-  });
+//   let introImageTl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: triggerElement,
+//       start: "top top",
+//       end: "top+=5%",
+//       scrub: 1,
+//     },
+//   });
 
-  introImageTl.fromTo(
-    introImageElement,
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-    }
-  );
+//   introImageTl.fromTo(
+//     introImageElement,
+//     {
+//       opacity: 0,
+//     },
+//     {
+//       opacity: 1,
+//       duration: 1,
+//       ease: "power2.inOut",
+//     }
+//   );
 
-  let reverseTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: triggerElement,
-      start: "center+=5%",
-      end: "bottom bottom",
-      scrub: 1,
-      ease: "power2.inOut",
-      reverse: true,
-    },
-  });
-});
+//   let reverseTl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: triggerElement,
+//       start: "center+=5%",
+//       end: "bottom bottom",
+//       scrub: 1,
+//       ease: "power2.inOut",
+//       reverse: true,
+//     },
+//   });
+// });
+
 $(".section_header").each(function () {
   let triggerElement = $(this);
   let targetElement = $(".header_background-overlay");
