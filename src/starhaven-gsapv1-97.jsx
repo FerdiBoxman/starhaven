@@ -172,7 +172,7 @@ $('.section_intro').each(function () {
     scrollTrigger: {
       trigger: triggerElement,
       start: 'top top',
-      end: 'top+=5%',
+      end: 'top+=15%',
       scrub: 1,
     },
   });
