@@ -157,14 +157,12 @@ $('.section_intro').each(function () {
     introTextElements,
     {
       opacity: 0,
-      y: 30,
     },
     {
       opacity: 1,
-      y: 0,
       duration: 1,
     },
-    '-=0.5'
+    0.05
   );
 
   let introImageTl = gsap.timeline({
@@ -185,7 +183,7 @@ $('.section_intro').each(function () {
       opacity: 1,
       duration: 1,
     },
-    '-=0.5'
+    0.05
   );
 
   let reverseTl = gsap.timeline({
