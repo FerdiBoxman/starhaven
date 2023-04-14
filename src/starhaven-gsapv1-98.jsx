@@ -172,7 +172,7 @@ $('.section_intro').each(function () {
     scrollTrigger: {
       trigger: triggerElement,
       start: 'top top',
-      end: 'top+=15%',
+      end: 'top+=5%',
       scrub: 1,
     },
   });
@@ -187,7 +187,7 @@ $('.section_intro').each(function () {
       duration: 1,
       ease: 'power2.inOut',
     },
-    0.5
+    '-=0.5'
   );
 
   let reverseTl = gsap.timeline({
