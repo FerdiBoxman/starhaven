@@ -134,7 +134,7 @@ $('.section_intro').each(function () {
     scrollTrigger: {
       trigger: triggerElement,
       start: 'top top',
-      end: 'top+=5%',
+      end: 'top+=20%',
       scrub: 1,
     },
   });
@@ -163,7 +163,6 @@ $('.section_intro').each(function () {
       opacity: 1,
       y: 0,
       duration: 1,
-      ease: 'power2.inOut',
     },
     '-=0.5'
   );
@@ -172,7 +171,7 @@ $('.section_intro').each(function () {
     scrollTrigger: {
       trigger: triggerElement,
       start: 'top top',
-      end: 'top+=5%',
+      end: 'top+=20%',
       scrub: 1,
     },
   });
@@ -185,7 +184,6 @@ $('.section_intro').each(function () {
     {
       opacity: 1,
       duration: 1,
-      ease: 'power2.inOut',
     },
     '-=0.5'
   );
